@@ -142,11 +142,11 @@ func listRoles(awsRoles []*saml2aws.AWSRole, samlAssertion string, loginFlags *f
 
 	log.Println("")
 	for _, account := range awsAccounts {
-		fmt.Println(account.Name)
+	
 		for _, role := range account.Roles {
 			fmt.Println(role.RoleARN)
 		}
-		fmt.Println("")
+		
 	}
 
 	return nil
